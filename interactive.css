@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: lightcoral;
+    transition: background 0.5s;
+}
+
+div {
+    text-align: center;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    box-shadow: 0 0 10px 5px black;
+    transition:  300ms;
+    background: #15676b;
+    color: white;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h1, h3 {
+    animation: down 1s;
+}
+
+@keyframes down {
+    from {
+        transform: translateY(-50px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
